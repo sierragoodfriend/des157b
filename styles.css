@@ -1,0 +1,256 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    background: rgb(84, 160, 211);
+}
+
+.button-start {
+    font-size: 90px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: inherit;
+    color: rgb(247, 241, 241);
+}
+
+/* sun looking button! */
+.button-clicked {
+    border-radius: 100%;
+    padding: 40px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    background-color: rgb(250, 233, 150);
+    box-shadow: 0 0 15px 10px rgb(245, 250, 150);
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+/* name */
+h1 {
+    margin: 0;
+    padding: 20px 0px 10px 0px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+/* description */
+h2 {
+    padding-bottom: 20px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: 20px;
+    color: rgb(247, 241, 241);
+}
+
+main {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* NAV CORRECTIONS */
+a {
+    text-decoration: none;
+    color: rgb(249, 244, 244);
+    
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    margin-top: 5px;
+}
+
+li:hover {
+    background-color: rgb(52, 124, 169);
+}
+
+/* banner holds flowers w/ position relative */
+#banner {
+    position: relative;
+    width: 1100px;
+    height: 250px;
+}
+
+/* text to give plants sun */
+p {
+    position: absolute;
+    left: 425px;
+    top: 120px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(2, 76, 129);
+}
+
+.flowersGrowing {
+    animation: growFlower 1s infinite alternate;
+}
+
+/* animation for growing flowers */
+@keyframes growFlower {
+    0% {transform: scale(0.95);}
+    100% {transform: scale(1);}
+}
+
+/* these flowers are on the page before (and after!) the switch */
+#starting-flower {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#starting-purp-flower {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* These flowers will grow onto the page! */
+
+#flower3 {
+    position: absolute;
+    top: 75px;
+    left: 130px;
+}
+
+#flower4 {
+    position: absolute;
+    bottom: 20px;
+    right: 140px;
+}
+
+#flower5 {
+    position: absolute;
+    top: 5px;
+    right: 310px;
+}
+
+#flower6 {
+    position: absolute;
+    bottom: 15px;
+    right: 261px;
+}
+
+#flower7 {
+    position: absolute;
+    top: 50px;
+    left: 361px;
+}
+
+#flower8 {
+    position: absolute;
+    top: 20px;
+    right: 231px;
+}
+
+/* flower 9 is positioned by deault */
+
+#flower10 {
+    position: absolute;
+    top: 5px;
+    left: 161px;
+}
+
+#flower11 {
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+}
+
+#flower12 {
+    position: absolute;
+    bottom: 5px;
+    left: 500px;
+}
+
+#flower13 {
+    position: absolute;
+    top: 5px;
+    left: 260px;
+}
+
+#flower14 {
+    position: absolute;
+    top: 2px;
+    left: 400px;
+}
+
+#flower15 {
+    position: absolute;
+    bottom: 5px;
+    left: 300px;
+}
+
+#flower16 {
+    position: absolute;
+    bottom: 2px;
+    left: 430px;
+}
+
+#flower17 {
+    position: absolute;
+    top: 2px;
+    right: 140px;
+}
+
+#flower18 {
+    position: absolute;
+    bottom: 2px;
+    right: 340px;
+}
+
+#flower19 {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+/* hidden flowers */
+.flowers {
+    display: none;
+}
+
+/* starting flowers show */
+#starting-flower, #starting-purp-flower {
+    display: block;
+}
+
+/* @keyframes flowersGrow {
+    0% {width: 0px;}
+    100% {width: 100%;}
+} */
+
