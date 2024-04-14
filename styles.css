@@ -6,34 +6,26 @@
 }
 
 body {
-    background: rgb(84, 160, 211);
-}
-
-.button-start {
-    font-size: 90px;
-    border: none;
-    cursor: pointer;
-    border-radius: 100%;
-    background-color: inherit;
-    color: rgb(247, 241, 241);
+    background: rgb(52, 125, 174);
 }
 
 /* sun looking button! */
-.button-clicked {
+button {
     border-radius: 100%;
     padding: 40px;
     margin-bottom: 25px;
     cursor: pointer;
     border: none;
     background-color: inherit;
-    background-color: rgb(250, 233, 150);
-    box-shadow: 0 0 15px 10px rgb(245, 250, 150);
+    background-color: rgb(224, 215, 215);
+    box-shadow: 0 0 15px 10px rgb(224, 215, 215); 
     margin-top: 10px;
     margin-right: 10px;
 }
 
 header {
     text-align: center;
+    margin-bottom: 0;
 }
 
 /* name */
@@ -102,18 +94,6 @@ li:hover {
     position: relative;
     width: 1100px;
     height: 250px;
-}
-
-/* text to give plants sun */
-p {
-    position: absolute;
-    left: 425px;
-    top: 120px;
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: rgb(2, 76, 129);
 }
 
 .flowersGrowing {
