@@ -34,27 +34,6 @@
                 button.style.boxShadow = `0 0 15px 10px rgb(245, 250, 150)`;
 
             allFlowersShowing = true;
-
-            function randomColorGenerator() {
-                const flowerColors = [
-                    `images/pink-flower.png`,
-                    `images/blue-flower.png`,
-                    `images/yellow-flower.png`,
-                    `images/orange-flower.png`,
-                    `images/purple-flower.png`
-                ];
-                //generate a num between 0-4.9999, round down, use as flower color array number
-                const randomNum = Math.floor(Math.random() * flowerColors.length);
-                return flowerColors[randomNum];
-                }
-
-                flowers.forEach(function(flower) {
-                    const interval = Math.random() * 14000 + 1000; // Random interval between 1 and 15 seconds
-                    setInterval(function() {
-                        flower.src = randomColorGenerator();
-                    }, interval);
-                });
-
             } else {
             
             for(let i = 0; i < flowers.length; i++){
