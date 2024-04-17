@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4e89bcf159.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <title>Blockbuster Studio</title>
@@ -13,17 +16,31 @@
     <main>
 
         <div class="image-container">
+
             <img src="images/tvBackground.png" alt="TV Background" width="600" height="607" id="tv">
-            <video id="videoOnTV" loop muted>
+
+            <video id="videoOnTV" muted>
+                <source src="videos/marineLife.webm" type="video/webm">
                 <source src="videos/marineLife.mp4" type="video/mp4">
             </video>
+
+            <!-- play and pause buttons from font awesome -->
             <div id="videoControls">
                 <i class="fa-solid fa-play"></i>
                 <i class="fa-solid fa-pause"></i>
             </div>
-            <!-- play and pause buttons from font awesome -->
             
+            <div id="poemLinesContainer">
+                <p id="line1" class="hidden">There's nothing wrong with enjoying looking at the surface of the ocean,</p>
+
+                <p id="line2" class="hidden">except that when you finally see what goes on underwater,</p>
+
+                <p id="line3" class="hidden">you realize that you've been missing the whole point</p>
+            </div>
+    
         </div>
+
+
 
     </main>
     
