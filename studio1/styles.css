@@ -14,11 +14,17 @@ body {
     position: relative;
 }
 
+@keyframes droplet {
+    100% {
+      font-size: 48px;
+    }
+  }
+
 /* video positioned absolute to go inside of image container */
 #videoOnTV {
     position: absolute;
     width: 500px; 
-    z-index: -1;
+    z-index: -2;
 }
 
 /* play and pause button styles */
@@ -31,6 +37,7 @@ body {
     top: 58%;
     font-size: 24px;
     color: rgb(248, 248, 248);
+    z-index: 2;
 }
 
 .fa-play, .fa-pause {
@@ -70,7 +77,7 @@ p {
     left: 40px;
     width: 310px;
     font-family: "Titillium Web", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
 }

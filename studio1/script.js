@@ -10,11 +10,10 @@
     const line3 = document.querySelector(`#line3`);
     //data for text display timing
     const poem = {
-        start: [1, 7, 18],
+        start: [0, 7, 20],
         stop: [5, 13, 26],
         line: [line1, line2, line3]
     }
-
 
     //event listener for play button
     playButton.addEventListener(`click`, function() {
