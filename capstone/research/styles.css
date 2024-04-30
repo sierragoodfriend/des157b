@@ -1,11 +1,11 @@
 * {
     margin: auto;
-    max-width: 500px;
 }
 
 body {
     background-color: rgb(52, 125, 174);
     color: rgb(247, 241, 241);
+    max-width: 500px;
 }
 
 h1, h2 {
@@ -62,4 +62,8 @@ p {
     margin-top: 10px;
     font-size: 18px;
     line-height: 25px;
+}
+
+img {
+    margin: 20px 0 10px -100px;
 }
