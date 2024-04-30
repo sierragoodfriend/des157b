@@ -18,9 +18,6 @@ h1, h2 {
     padding: 10px;
 }
 
-h2 {
-    font-size: 28px;
-}
 
 h3 {
     display: inline-block;
@@ -35,6 +32,11 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+/* home button for all pages */
+#home {
+    text-decoration: none;
     position: absolute;
     top: 15px;
     right: 15px;
@@ -46,13 +48,13 @@ a {
     border-radius: 15px;
 }
 
-a:hover {
+#home:hover {
     background-color: rgb(21, 58, 83);
     color: rgb(247, 241, 241);
     cursor: pointer;
 }
 
-p, a {
+p, #home {
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -66,4 +68,20 @@ p {
 
 img {
     margin: 20px 0 10px -100px;
+}
+
+/* for annotated bib */
+.articleLinks {
+    color: rgb(21, 58, 83);
+    font-style: italic;
+    font-size: 24px;
+}
+
+.articleLinks:hover {
+    cursor: pointer;
+    color: rgb(95, 191, 255);
+}
+
+.mlaCitation {
+    margin-bottom: 10px;
 }
