@@ -1,15 +1,25 @@
+/* background pattern from 10015 Tools – CSS Background Pattern Generator */
+
 /* puts h1 and h2 next to each other on top of the page */
 body {
     max-width: 1200px;
     margin: auto;
+    background: radial-gradient(circle, transparent 20%, #fff1ff 20%, #fff1ff 80%, transparent 80%, transparent) 0% 0% / 64px 64px, radial-gradient(circle, transparent 20%, #fff1ff 20%, #fff1ff 80%, transparent 80%, transparent) 32px 32px / 64px 64px, linear-gradient(rgba(87, 90, 242, 0.35) 0.5px, transparent 0.5px) 0px -0.25px / 32px 32px, linear-gradient(90deg, rgba(87, 90, 242, 0.35) 0.5px, #fff1ff 0.5px) -0.25px 0px / 32px 32px #fff1ff;
+    background-size: 64px 64px, 64px 64px, 32px 32px, 32px 32px;
+    background-color: #fff1ff;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* display flex on header so that the h1 and h2 are aligned in a row with space between */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 100px;
+    padding: 10px; 
+    flex: 1;
+    /* responsive margin for even spacing */
+    margin-bottom: 8vh;
 }
 
 /* margin ensures space between h1 and h2 when page is small */
@@ -22,7 +32,7 @@ h1 {
 }
 
 h2 {
-    margin: 20px 15px 0 15px;
+    margin: 15px 15px 0 15px;
     font-family: "IBM Plex Serif", serif;
     font-size: 30px;
     font-weight: 300;
@@ -37,7 +47,8 @@ h2 {
 
 /* gives images some space between eachother */
 img {
-    margin: 0px 5px 0 5px;
+    margin: 0px 8px 0 8px;
+    border-radius: 3px;
 }
 
 form {
@@ -51,4 +62,8 @@ form {
     font-weight: 400;
     font-size: 24px;
     font-style: normal;
+    padding: 5px;
+    /* responsive margin for even spacing */
+    margin-bottom: 10vh; 
+    background-color: rgba(192, 192, 248, 0.486);
 }
