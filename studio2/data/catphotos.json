@@ -1,0 +1,30 @@
+{
+    "April 18, 2024" : {
+        "count" : 2, 
+        "images" : ["images/cat1.jpg", "images/cat2.jpg"]
+    },
+    "April 19, 2024" : {
+        "count" : 4,
+        "images" : ["images/cat3.jpg", "images/cat4.jpg", "images/cat5.jpg", "images/cat6.jpg"]
+    },
+    "April 20, 2024" : {
+        "count" : 2,
+        "images" : ["images/cat7.jpg", "images/cat8.jpg"]
+    },
+    "April 21, 2024" : {
+        "count" : 4,
+        "images" : ["images/cat9.jpg", "images/cat10.jpg", "images/cat11.jpg" ,"images/cat12.jpg"]
+    },
+    "April 22, 2024" : {
+        "count" : 2,
+        "images" : ["images/cat13.jpg", "images/cat14.jpg"]
+    },
+    "April 23, 2024" : {
+        "count" : 1,
+        "images" : ["images/cat15.jpg"]
+    },
+    "April 24, 2024" : {
+        "count" : 1,
+        "images" : ["images/cat16.jpg"]
+    }
+}

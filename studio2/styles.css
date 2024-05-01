@@ -1,0 +1,54 @@
+/* puts h1 and h2 next to each other on top of the page */
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* display flex on header so that the h1 and h2 are aligned in a row with space between */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+/* margin ensures space between h1 and h2 when page is small */
+h1 {
+    margin: 10px 0 0 15px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    margin: 20px 15px 0 15px;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* styles for images added to page! */
+#imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* gives images some space between eachother */
+img {
+    margin: 0px 5px 0 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#picker {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+}
