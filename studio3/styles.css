@@ -34,34 +34,17 @@ header {
     100% {top: 52vh;}
 }
 
+#title {
+    margin-bottom: 0;
+}
+
 /* need this for space w icon */
 #firstFlag {
     margin-top: 70vh;
 }
 
-#title {
-    margin-bottom: 0;
-}
-
-/* right beneath the title */
-.disclaimer {
-    font-size: 24px;
-}
-
-footer {
-    font-family: "Gayathri", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-}
-
-#footerTitle {
-    margin-top: 25vh;
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
 /* flags are containers for jQuery overlay */
+/* all flag imgs and containers held here */
 .allFlags {
     width: 600px;
     height: 370px;
@@ -93,4 +76,26 @@ footer {
 .allFlags:hover.flagNames {
     /* show overlay on hover */
     display: block; 
+}
+
+/* right beneath the title */
+.disclaimer {
+    font-size: 24px;
+}
+
+footer {
+    font-family: "Gayathri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+#footerTitle {
+    margin-top: 25vh;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#referenceMargin {
+    margin-bottom: 20px;
 }
