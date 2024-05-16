@@ -1,15 +1,11 @@
 body {
-    /* background color changes gradually over 15 seconds */
-    animation: background-clr-chg 20s infinite alternate;
+    /* background color changes gradually over 45 seconds */
+    animation: background-clr-chg 15s infinite alternate;
 }
 
 @keyframes background-clr-chg {
-    0% {background-color: rgb(237, 184, 184);}
-    20% {background-color: rgb(238, 205, 175);}
-    40% {background-color: rgb(238, 230, 175);}
-    60% {background-color: rgb(193, 238, 175);}
-    80% {background-color: rgb(175, 214, 238);}
-    100% {background-color: rgb(204, 175, 238);}
+    0% {background-color: rgb(170, 203, 228);}
+    100% {background-color: rgb(212, 170, 228);}
 }
 
 a {
