@@ -1,0 +1,100 @@
+body {
+    /* background color changes gradually over 15 seconds */
+    animation: background-clr-chg 20s infinite alternate;
+}
+
+@keyframes background-clr-chg {
+    0% {background-color: rgb(237, 184, 184);}
+    20% {background-color: rgb(238, 205, 175);}
+    40% {background-color: rgb(238, 230, 175);}
+    60% {background-color: rgb(193, 238, 175);}
+    80% {background-color: rgb(175, 214, 238);}
+    100% {background-color: rgb(204, 175, 238);}
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* icon positioned in center and absolute so animation below doesnt move other objects */
+.fa-solid {
+    font-size: 100px;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    animation: arrow-up-down 1s infinite alternate ease-in-out;
+}
+
+@keyframes arrow-up-down {
+    0% {top: 48vh;}
+    100% {top: 52vh;}
+}
+
+/* need this for space w icon */
+#firstFlag {
+    margin-top: 70vh;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+/* right beneath the title */
+.disclaimer {
+    font-size: 24px;
+}
+
+footer {
+    font-family: "Gayathri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+#footerTitle {
+    margin-top: 25vh;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* flags are containers for jQuery overlay */
+.allFlags {
+    width: 600px;
+    height: 370px;
+    position: relative; /* overlay positioning is absolute, this is the container */
+    display: block;
+    margin: 50px auto;
+    margin-top: 25vh;
+}
+
+.flagNames {
+    font-family: "Gayathri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* overlay stylings for when flags are hovered over */
+    display: none; /* Initially hidden */
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+    top: 10%;
+    right: 20%;
+    padding-top: 80px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgb(237, 234, 234);
+}
+
+.allFlags:hover.flagNames {
+    /* show overlay on hover */
+    display: block; 
+}
