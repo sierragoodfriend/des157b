@@ -213,8 +213,8 @@
 
     windowClickableArea.addEventListener(`click`, onWindowClick);
 
-    gameClickableArea.addEventListener('click', function(){
-        window.location.href = `game/index.html`;
-    });
+    // gameClickableArea.addEventListener('click', function(){
+    //     window.location.href = `game/index.html`;
+    // });
 
 })();
