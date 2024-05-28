@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100vh;
+    background: repeating-radial-gradient(circle,#a29993, transparent 20%);
+        background-size: 1em 1em;
+        background-color: #ffffff;
+        opacity: 1
+}
+
+#backgroundClr {
+    background-color: rgb(245, 245, 245);
+    width: 750px;
+    height: 550px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#overlay {
+    background-color: rgb(16, 16, 17);
+    position: absolute;
+    height: 10px;
+    width: 400px;
+    padding-bottom: 540px;
+    border-radius: 10px;
+    padding-right: 350px;
+    z-index: 1;
+}
+
+#overlayText {
+    position: absolute;
+    max-width: 300px;
+    margin-left: 250px;
+    margin-top: 200px;
+}
+
+#exitOverlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#lowerSection {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+#actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 30px;
+    background-color: rgb(131, 159, 151);
+    border-radius: 10px;
+}
+
+#choices button {
+    background-color: white;
+    padding: 10px 15px;
+    margin: 10px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#choices button:hover {
+    background-color: rgb(188, 197, 244);
+    border: 2px solid white;
+    padding: 8px 13px;
+}
+
+#city {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#cityHealthStats {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#cityImage {
+   width: 300px;
+   height: 233px;
+}
+
+#healthBarOutline {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #333;
+    position: relative;
+    margin-top: 5px;
+}
+
+#healthBarInterior {
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.healthPercentage {
+    margin-left: 85px;
+    margin-top: 6px;
+    position: absolute;
+}
+
+#prompt {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.fa-house {
+    font-size: 24px;
+    margin-left: 730px;
+    margin-top: -10px;
+    cursor: pointer;
+}
