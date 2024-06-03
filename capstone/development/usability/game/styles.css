@@ -10,9 +10,9 @@ main {
     gap: 10px;
     height: 100vh;
     background: repeating-radial-gradient(circle,#a29993, transparent 20%);
-        background-size: 1em 1em;
-        background-color: #ffffff;
-        opacity: 1
+    background-size: 1em 1em;
+    background-color: #ffffff;
+    opacity: 1
 }
 
 #backgroundClr {
@@ -24,7 +24,7 @@ main {
 }
 
 #overlay {
-    background-color: rgb(16, 16, 17);
+    background-color: rgb(8, 8, 67);
     position: absolute;
     height: 10px;
     width: 400px;
@@ -34,18 +34,54 @@ main {
     z-index: 1;
 }
 
-#overlayText {
-    position: absolute;
-    max-width: 300px;
-    margin-left: 250px;
-    margin-top: 200px;
+.overlayTitleText {
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    width: 500px;
+    margin-top: 0px;
+    background-color: rgb(53, 53, 144);
+    padding: 10px;
+    padding-right: 0px;
+    padding-left: 250px;
+    padding-top: 10px;
+    border-radius: 10px;
 }
 
-#exitOverlay {
+.overlayText {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    width: 700px;
+    margin-left: 40px;
+    line-height: 25px;
+}
+
+#overlaySet1Button2-Part2 {
+    display: flex;
+    margin-top: 240px;
+    margin-left: 12px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+#overlaySet1Button2-Part2 img {
+    border-radius: 20px;
+}
+
+.fa-arrow-right {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 10px;
+    right: 12px;
     cursor: pointer;
+    color: white;
+    font-size: 35px;
 }
 
 .hidden {

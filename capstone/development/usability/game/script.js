@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 (function() {
     'use strict';
 
@@ -12,7 +14,7 @@
     const option3 = document.querySelector('#option3');
     const overlay = document.querySelector(`#overlay`);
     const overlayText = document.querySelector(`#overlayText`);
-    const exitOverlay = document.querySelector(`#exitOverlay`);;
+    const exitOverlay = document.querySelector(`.fa-arrow-right`);;
 
     // //go back home if you don't want to play game
     // exitGame.addEventListener(`click`, function(){
@@ -52,19 +54,16 @@
                         health -= 10;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 1 Option 1`;
                         break;
                     case 'option2':
                         health -= 20;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 1 Option 2`;
                         break;
                     case 'option3':
                         health += 15;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 1 Option 3`;
                         break;
                 }
                 choiceSequence++;
@@ -75,19 +74,16 @@
                         health -= 10;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 2 Option 1`;
                         break;
                     case 'option2':
                         health += 10;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 2 Option 2`;
                         break;
                     case 'option3':
                         health += 15;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 2 Option 3`;
                         break;
                 }
                 choiceSequence++;
@@ -98,19 +94,16 @@
                         health += 20;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 3 Option 1`;
                         break;
                     case 'option2':
                         health -= 15; 
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 3 Option 2`;
                         break;
                     case 'option3':
                         health -= 5; 
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 3 Option 3`;
                         break;
                 }
                 choiceSequence ++;
@@ -121,19 +114,16 @@
                         health -= 10;
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 4 Option 1`;
                         break;
                     case 'option2': // Housing
                         health -= 10; 
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 4 Option 2`;
                         break;
                     case 'option3': // Job Assistance
                         health -= 10; 
                         overlay.classList.remove(`hidden`);
                         exitGame.classList.add(`hidden`);
-                        overlayText.innerHTML = `Button Set 4 Option 3`;
                         break;
                 }
                 choiceSequence ++;
@@ -195,3 +185,5 @@
         window.history.back();
     });
 })();
+
+});
