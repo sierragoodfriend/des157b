@@ -33,7 +33,7 @@
 
 
     window.onload = function() {
-        alert(`Hello and welcome! 1) Please see if you know what to do when entering the page, or if you can find out relatively quickly, 2) please see if you can play the game (it's not completed, I still need to update the overlays, but please see if the game makes sense and let me know if you think the questions asked aren't good enough, and 3) please explore the elements, let me know if you think I should add anything, and see what works well / what doesn't work well. Thank you!`);
+        alert(`Hello and welcome! 1) Please see if you know what to do when entering the page, or if you can find out relatively quickly, 2) please see if you can play the game (it's not completed, I still need to update the overlays and add winning & losing pages)... but please see if the game makes sense and let me know if you think the questions asked aren't good enough, and 3) please explore the elements, let me know if you think I should add anything, and see what works well / what doesn't work well. Thank you!`);
     };
     
     let doorClicked = false; //used to track if door has been clicked
