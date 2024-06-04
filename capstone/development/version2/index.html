@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Capstone Project: Communal Housing</title>
+</head>
+<body>
+
+    <!-- centers main image on page -->
+    <div id="centeringBox">
+        <!-- need this so that outline and selector box can be positioned correctly -->
+        <div class="absolute"> 
+
+            <!-- button to close text over city scape -->
+            <button class="hidden" id="cityScapeTextButton">x</button>
+            <!-- each letter of the text that displays when clicking on window in living room -->
+            <div class="hidden" id="cityScapeTextContainer">
+                <span class="letter">A</span><span class="letter">s</span> <span class="letter">y</span><span class="letter">o</span><span class="letter">u</span> <span class="letter">g</span><span class="letter">l</span><span class="letter">a</span><span class="letter">n</span><span class="letter">c</span><span class="letter">e</span> <span class="letter">o</span><span class="letter">u</span><span class="letter">t</span> <span class="letter">a</span><span class="letter">t</span> <span class="letter">t</span><span class="letter">h</span><span class="letter">e</span> <span class="letter">c</span><span class="letter">i</span><span class="letter">t</span><span class="letter">y,</span> <span class="letter">y</span><span class="letter">o</span><span class="letter">u</span> <span class="letter">c</span><span class="letter">a</span><span class="letter">n'</span><span class="letter">t</span> <span class="letter">m</span><span class="letter">i</span><span class="letter">s</span><span class="letter">s</span> <span class="letter">t</span><span class="letter">h</span><span class="letter">e</span> <span class="letter">s</span><span class="letter">k</span><span class="letter">y</span><span class="letter">s</span><span class="letter">c</span><span class="letter">r</span><span class="letter">a</span><span class="letter">p</span><span class="letter">e</span><span class="letter">r</span><span class="letter">s</span>. <span class="letter">E</span><span class="letter">a</span><span class="letter">c</span><span class="letter">h</span> <span class="letter">o</span><span class="letter">n</span><span class="letter">e</span> <span class="letter">i</span><span class="letter">s</span> <span class="letter">h</span><span class="letter">o</span><span class="letter">m</span><span class="letter">e</span> <span class="letter">t</span><span class="letter">o</span><span class="letter"> </span><span class="letter">t</span><span class="letter">h</span><span class="letter">o</span><span class="letter">u</span><span class="letter">s</span><span class="letter">a</span><span class="letter">n</span><span class="letter">d</span><span class="letter">s</span> <span class="letter">o</span><span class="letter">f</span> <span class="letter">p</span><span class="letter">e</span><span class="letter">o</span><span class="letter">p</span><span class="letter">l</span><span class="letter">e</span>. <span class="letter">I</span><span class="letter">t</span><span class="letter">'</span><span class="letter">s</span> <span class="letter">h</span><span class="letter">a</span><span class="letter">r</span><span class="letter">d</span> <span class="letter">t</span><span class="letter">o</span> <span class="letter">b</span><span class="letter">e</span><span class="letter">l</span><span class="letter">i</span><span class="letter">e</span><span class="letter">v</span><span class="letter">e</span> <span class="letter">t</span><span class="letter">h</span><span class="letter">e</span><span class="letter">y</span> <span class="letter">w</span><span class="letter">e</span><span class="letter">r</span><span class="letter">e</span> <span class="letter">o</span><span class="letter">n</span><span class="letter">c</span><span class="letter">e</span> <span class="letter">a</span><span class="letter">b</span><span class="letter">a</span><span class="letter">n</span><span class="letter">d</span><span class="letter">o</span><span class="letter">n</span><span class="letter">e</span><span class="letter">d.</span><br><br><span class="letter">E</span><span class="letter"></span><span class="letter">m</span><span class="letter">p</span><span class="letter">t</span><span class="letter">y</span> <span class="letter">o</span><span class="letter">f</span><span class="letter">f</span><span class="letter">i</span><span class="letter">c</span><span class="letter">e</span><span class="letter">s</span> <span class="letter">a</span><span class="letter">r</span><span class="letter">e</span> <span class="letter">n</span><span class="letter">o</span><span class="letter">w</span> <span class="letter">c</span><span class="letter">o</span><span class="letter">z</span><span class="letter">y</span> <span class="letter">a</span><span class="letter">p</span><span class="letter">a</span><span class="letter">r</span><span class="letter">t</span><span class="letter">m</span><span class="letter">e</span><span class="letter">n</span><span class="letter">t</span><span class="letter">s.</span> <span class="letter">T</span><span class="letter">h</span><span class="letter">e</span> <span class="letter">l</span><span class="letter">o</span><span class="letter">b</span><span class="letter">b</span><span class="letter">i</span><span class="letter">e</span><span class="letter">s</span> <span class="letter">a</span><span class="letter">r</span><span class="letter">e</span> <span class="letter">p</span><span class="letter">l</span><span class="letter">a</span><span class="letter">y</span><span class="letter">g</span><span class="letter">r</span><span class="letter">o</span><span class="letter">u</span><span class="letter">n</span><span class="letter">d</span><span class="letter">s</span> <span class="letter">&</span> <span class="letter">c</span><span class="letter">a</span><span class="letter">f</span><span class="letter">e</span><span class="letter">s,</span> <span class="letter">a</span><span class="letter">n</span><span class="letter">d</span> <span class="letter">t</span><span class="letter">h</span><span class="letter">e</span> <span class="letter">r</span><span class="letter">o</span><span class="letter">o</span><span class="letter">t</span><span class="letter">o</span><span class="letter">p</span><span class="letter">s</span> <span class="letter">h</span><span class="letter">a</span><span class="letter">v</span><span class="letter">e</span> <span class="letter">b</span><span class="letter">e</span><span class="letter">c</span><span class="letter">o</span><span class="letter">m</span><span class="letter">e</span> <span class="letter">v</span><span class="letter">e</span><span class="letter">r</span><span class="letter">t</span><span class="letter">i</span><span class="letter">c</span><span class="letter">a</span><span class="letter">l</span> <span class="letter">g</span><span class="letter">a</span><span class="letter">r</span><span class="letter">d</span><span class="letter">e</span><span class="letter">n</span><span class="letter">s,</span> <span class="letter">r</span><span class="letter">a</span><span class="letter">i</span><span class="letter">n</span><span class="letter">w</span><span class="letter">a</span><span class="letter">t</span><span class="letter">e</span><span class="letter">r</span> <span class="letter">h</span><span class="letter">a</span><span class="letter">r</span><span class="letter">v</span><span class="letter">e</span><span class="letter">s</span><span class="letter">t</span><span class="letter">i</span><span class="letter">n</span><span class="letter">g</span> <span class="letter">s</span><span class="letter">y</span><span class="letter">s</span><span class="letter">t</span><span class="letter">e</span><span class="letter">m</span><span class="letter">s,</span> <span class="letter">s</span><span class="letter">o</span><span class="letter">l</span><span class="letter">a</span><span class="letter">r</span> <span class="letter">p</span><span class="letter">a</span><span class="letter">n</span><span class="letter">e</span><span class="letter">l</span> <span class="letter">i</span><span class="letter">n</span><span class="letter">s</span><span class="letter">t</span><span class="letter">a</span><span class="letter">l</span><span class="letter">l</span><span class="letter">a</span><span class="letter">t</span><span class="letter">i</span><span class="letter">o</span><span class="letter">n</span><span class="letter">s...</span> <span class="letter">a</span><span class="letter">n</span><span class="letter">d</span> <span class="letter">s</span><span class="letter">o</span> <span class="letter">m</span><span class="letter">u</span><span class="letter">c</span><span class="letter">h</span> <span class="letter">m</span><span class="letter">o</span><span class="letter">r</span><span class="letter">e...</span><br><br><span class="letter">Y</span><span class="letter">o</span><span class="letter">u</span> <span class="letter">w</span><span class="letter">o</span><span class="letter">n</span><span class="letter">d</span><span class="letter">e</span><span class="letter">r</span> <span class="letter">w</span><span class="letter">h</span><span class="letter">a</span><span class="letter">t</span> <span class="letter">t</span><span class="letter">h</span><span class="letter">e</span> <span class="letter">c</span><span class="letter">i</span><span class="letter">t</span><span class="letter">y</span> <span class="letter">m</span><span class="letter">u</span><span class="letter">s</span><span class="letter">t</span> <span class="letter">h</span><span class="letter">a</span><span class="letter">v</span><span class="letter">e</span> <span class="letter">b</span><span class="letter">e</span><span class="letter">e</span><span class="letter">n</span> <span class="letter">l</span><span class="letter">i</span><span class="letter">k</span><span class="letter">e</span> <span class="letter">b</span><span class="letter">e</span><span class="letter">f</span><span class="letter">o</span><span class="letter">r</span><span class="letter">e</span> <span class="letter">t</span><span class="letter">h</span><span class="letter"><span class="letter">e</span><span class="letter">s</span><span class="letter">e</span> <span class="letter">a</span><span class="letter">b</span><span class="letter">a</span><span class="letter">n</span><span class="letter">d</span><span class="letter">o</span><span class="letter">n</span><span class="letter">e</span><span class="letter">d</span> <span class="letter">p</span><span class="letter">l</span><span class="letter">a</span><span class="letter">c</span><span class="letter">e</span><span class="letter">s</span> <span class="letter">b</span><span class="letter">e</span><span class="letter">c</span><span class="letter">a</span><span class="letter">m</span><span class="letter">e</span> <span class="letter">h</span><span class="letter">o</span><span class="letter">m</span><span class="letter">e</span><span class="letter">s.</span>
+            </div>
+
+            <img id="entranceImg" src="images/entrance.png" alt="House Entrance Photo">
+            <!-- selector box, invisible rectangle that surrounds area of door -->
+            <div id="doorClickableArea"></div>
+            <!-- image of yellow door outline displayed when hovering -->
+            <img class="hidden" id="doorOutline" src="images/doorHover.png" alt="Yellow Outline for Door">
+
+            <!-- the following code follows the same pattern, using an unseen selector area (rectangle) and an outline image (hidden until hovered over) that displays overtop of objects when their selector area is hovered over (done in js)-->
+            <div id="person1ClickableArea"></div>
+            <img class="hidden" id="person1Outline" src="images/person1Outline.png" alt="Yellow Outline for Person 1">
+
+            <div id="person2ClickableArea"></div>
+            <img class="hidden" id="person2Outline" src="images/person2Outline.png" alt="Yellow Outline for Person 2">
+
+            <div id="person3ClickableArea"></div>
+            <img class="hidden" id="person3Outline" src="images/person3Outline.png" alt="Yellow Outline for Person 3">
+
+            <div id="person4ClickableArea"></div>
+            <img class="hidden" id="person4Outline" src="images/person4Outline.png" alt="Yellow Outline for Person 4">
+
+            <div id="person5ClickableArea"></div>
+            <img class="hidden" id="person5Outline" src="images/person5Outline.png" alt="Yellow Outline for Person 5">
+
+            <div id="catClickableArea"></div>
+            <img class="hidden" id="catOutline" src="images/catOutline.png" alt="Yellow Outline for Cat">
+
+            <div id="windowClickableArea"></div>
+            <img class="hidden" id="windowOutline" src="images/windowOutline.png" alt="Yellow Outline for Window">
+
+            <a id="gameClickableArea" href="game/index.html"></a>
+            <img class="hidden" id="gameOutline" src="images/gameOutline.png" alt="Yellow Outline for Board Game">
+
+            <image class="hidden" id="rightArrow" src="images/rightArrow.png" alt="Right Facing Arrow"></image>
+
+        </div>
+
+    </div>
+
+    <!-- sounds used by people in living room! -->
+    <audio id="person1Sound" src="sounds/person1.mp3" preload="auto"></audio>
+    <audio id="person2Sound" src="sounds/person2.mp3" preload="auto"></audio>
+    <audio id="person3Sound" src="sounds/person3.mp3" preload="auto"></audio>
+    <audio id="person4Sound" src="sounds/person4.mp3" preload="auto"></audio>
+    <audio id="person5Sound" src="sounds/person5.mp3" preload="auto"></audio>
+    <audio id="catSound" src="sounds/cat.mp3" preload="auto"></audio>
+
+    
+</body>
+</html>
