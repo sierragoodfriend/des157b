@@ -2,7 +2,7 @@ h1, h2 {
     text-align: center;
 }
 
-ul ol li {
+ul ol li, p {
     margin: auto;
     max-width: 475px;
     line-height: 25px;
