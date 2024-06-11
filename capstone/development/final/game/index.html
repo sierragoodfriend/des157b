@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&family=Poppins&family=Reddit+Mono:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e89bcf159.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Game</title>
+</head>
+<body>
+
+    <main>
+        <div id="backgroundClr">
+            <i class="fa-solid fa-house"></i>
+            
+            <!-- class="hidden" -->
+            <div id="overlay" class="hidden">
+                <i class="fa-solid fa-arrow-right"></i>
+                <div id="overlayContents">
+
+                    <div id="overlayHeaderBackground">
+                        <h1 class="overlayTitleText">Repurpose Empty Buildings as Homes</h1>
+                    </div>
+
+                    <div class="overlayText"></div>
+
+                </div>
+                <!-- <div id="overlaySet1Button2-Part2">
+                    <img src="images/copan1.jpg" alt="Copan Building Sao Paulo B&W">
+                    <img src="images/copan2.jpg" alt="Copan Building Sao Paulo Side Profile">
+                </div> -->
+            </div>
+        <!-- upper right section -->
+        <div id="city">
+
+            <img id="cityImage" src="images/city.png" alt="character">
+            
+            <div id="cityHealthStats">
+                <p id="healthPercentage">Homeless Rate – 50%</p>
+                <div id="healthBarOutline">
+                    <div id="healthBarInterior"></div>
+                </div>
+            </div>
+
+        </div>
+
+    <div id="lowerSection">
+
+        <!-- upper left section -->
+        <div id="prompt"></div>
+
+        <!-- bottom section -->
+        <div id="actions">
+            <div id="choices">
+                <button id="option1"></button>
+                <button id="option2"></button>
+                <button id="option3"></button>
+            </div>
+        </div>
+
+        <!-- win/lose button -->
+        <button id="results" class="hidden">Results</button>
+        <button id="playAgain" class="hidden">Play Again</button>
+        <button id="leaveGame" class="hidden">Leave Game</button>
+    </div>
+</div>
+
+    </main>
+
+
+    <!-- <div id="winningContainer">
+        <div id="winning">
+        
+    </div>
+        
+    </div> -->
+
+</body>
+</html>

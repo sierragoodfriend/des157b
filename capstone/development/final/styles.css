@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(169, 217, 255);
+}
+
+/* play and pause buttons */
+.fa-play:hover, .fa-pause:hover {
+    cursor: pointer;
+    background-color: rgb(222, 240, 254);
+}
+
+.fa-play, .fa-pause {
+    font-size: 36px;
+    position: absolute;
+    border: 1px black solid;
+    padding: 6px;
+}
+
+.fa-play {
+    top: 35px;
+    left: 30px;
+}
+
+.fa-pause {
+    top: 35px;
+    left: 70px;
+}
+
+#audioText  {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* takes up full vp width and height and centers objects inside */
+#centeringBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* position selector box and outline correctly */
+.absolute {
+    position: absolute;
+}
+
+/* used in js to display and hide selector boxes and outline images */
+.hidden {
+    display: none;
+}
+
+#rightArrow {
+    position: absolute;
+    top: 380px;
+    margin-left: 20px;
+}
+
+/* placed over door */
+#doorClickableArea {
+    position: absolute;
+    top: 328px;
+    left: 335px;
+    height: 200px;
+    width: 122px;
+    z-index: 3;
+}
+
+/* placed over door, activated when clickable area is hovered */
+#doorOutline {
+    position: absolute;
+    top: 330px;
+    left: 335px;
+    z-index: 1;
+}
+
+#person1ClickableArea {
+    position: absolute;
+    top: 330px;
+    left: 80px;
+    height: 205px;
+    width: 113px;
+    z-index: 2;
+    transform: rotate(145deg);
+}
+
+#person1Outline {
+    position: absolute;
+    top: 325px;
+    left: 77px;
+    z-index: 1;
+}
+
+#person2ClickableArea {
+    position: absolute;
+    top: 265px;
+    left: 240px;
+    height: 205px;
+    width: 97px;
+    z-index: 2;
+    transform: rotate(175deg);
+}
+
+#person2Outline {
+    position: absolute;
+    top: 260px;
+    left: 240px;
+    z-index: 1;
+}
+
+#person3ClickableArea {
+    position: absolute;
+    top: 272px;
+    left: 460px;
+    height: 200px;
+    width: 122px;
+    z-index: 2;
+}
+
+#person3Outline {
+    position: absolute;
+    top: 270px;
+    left: 453px;
+    z-index: 1;
+}
+
+#person4ClickableArea {
+    position: absolute;
+    top: 402px;
+    left: 655px;
+    height: 210px;
+    width: 108px;
+    z-index: 2;
+}
+
+#person4Outline {
+    position: absolute;
+    top: 402px;
+    left: 646px;
+    z-index: 1;
+}
+
+#person5ClickableArea {
+    position: absolute;
+    top: 501px;
+    left: 500px;
+    height: 210px;
+    width: 118px;
+    z-index: 2;
+}
+
+#person5Outline {
+    position: absolute;
+    top: 496px;
+    left: 452px;
+    z-index: 1;
+}
+
+#catClickableArea {
+    position: absolute;
+    top: 351px;
+    left: 371px;
+    height: 65px;
+    width: 77px;
+    z-index: 2;
+}
+
+#catOutline {
+    position: absolute;
+    top: 350px;
+    left: 371px;
+    z-index: 1;
+}
+
+#windowClickableArea {
+    position: absolute;
+    top: 43px;
+    left: 231px;
+    height: 210px;
+    width: 362px;
+    z-index: 2;
+}
+
+#windowOutline {
+    position: absolute;
+    top: 41px;
+    left: 221px;
+    z-index: 1;
+}
+
+#gameClickableArea {
+    position: absolute;
+    top: 470px;
+    left: 346px;
+    height: 72px;
+    width: 107px;
+    z-index: 2;
+}
+
+#gameOutline {
+    position: absolute;
+    top: 468px;
+    left: 346px;
+    z-index: 1;
+}
+
+/* text that displays when the window in the living room is clicked and the city scape appears */
+/* background container for text */
+#cityScapeTextContainer {
+    position: absolute;
+    top: 270px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 30px 20px 30px 20px;
+    font-size: 24px;
+    color: rgb(198, 188, 55);
+    background-color: rgba(26, 4, 62, 0.85);
+    z-index: 2;
+}
+
+/* button to close cityscape opening text */
+#cityScapeTextButton {
+    position: absolute;
+    top: 275px;
+    right: 45px;
+    z-index: 3;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#cityScapeTextButton:hover {
+    cursor: pointer;
+}
+
+/* letters of text are invisible at first, then as js runs, they show one by one */
+.letter {
+    opacity: 0;
+    animation: revealLetter 1s forwards;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes revealLetter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* home icon for city scape */
+.fa-house {
+    position: absolute;
+    z-index: 2;
+    top: 55px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.fa-house:hover {
+    cursor: pointer;
+}
+
+/* css for instruction question mark, animation makes it grow and shrink */
+.fa-question {
+    position: absolute;
+    right: 5px;
+    top: 28px;
+    font-size: 36px;
+    border: 1px black solid;
+    padding: 10px 15px;
+    border-radius: 100%;
+    animation: growShrink 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes growShrink {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+}
+
+.fa-question:hover {
+    cursor: pointer;
+    background-color: rgb(222, 240, 254);
+}
+
+#instructions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: rgb(10, 10, 10);
+    background-color: rgb(247, 212, 234);
+}
+
+#instructionsh2 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(222, 145, 190);
+}
+
+/* paragraphs of text on instructions */
+.instructionsp {
+    background-color: rgba(255, 255, 255, 0.397);
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 115px;
+    max-width: 555px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+#exitInstructions {
+    position: absolute;
+    left: 375px;
+    top: 670px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(222, 145, 190);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#exitInstructions:hover {
+    cursor: pointer;
+    background-color: rgb(255, 193, 211);
+}
